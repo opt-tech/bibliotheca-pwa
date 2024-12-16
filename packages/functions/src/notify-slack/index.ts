@@ -7,13 +7,11 @@ const SLACK_CONFIG: { token: string; notify_slack_webhook_url: string } = fireba
 
 type BorrowOrReturn = 'borrow' | 'return';
 
-function getUserData({
-  before,
-  after,
-}: {
-  before: Book;
-  after: Book;
-}): { borrowOrReturn: BorrowOrReturn; email: string; bookTitle: string } {
+function getUserData({ before, after }: { before: Book; after: Book }): {
+  borrowOrReturn: BorrowOrReturn;
+  email: string;
+  bookTitle: string;
+} {
   if (before.borrowedBy) {
     const borrowOrReturn = 'return';
     const email = before.borrowedBy;

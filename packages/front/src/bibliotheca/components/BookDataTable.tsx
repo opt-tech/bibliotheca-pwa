@@ -39,7 +39,7 @@ export const BookDataViewTable: React.FC<ViewProps> = ({ book }) => {
     },
   ];
 
-  return <SimpleTable rows={rows} />;
+  return <SimpleTable rows={rows as any[]} />;
 };
 
 export const BookDataEditTable: React.FC<ViewProps & EditProps> = ({ book }) => {
@@ -82,5 +82,5 @@ export const BookDataEditTable: React.FC<ViewProps & EditProps> = ({ book }) => 
     },
   ];
 
-  return <SimpleTable rows={rows} />;
+  return <SimpleTable rows={rows as any[]} />;
 };

@@ -9,7 +9,7 @@ interface SimpleTableProps {
   }>;
 }
 
-export const SimpleTable: React.SFC<SimpleTableProps> = ({ rows, ...rest }) => (
+export const SimpleTable: React.FC<SimpleTableProps> = ({ rows, ...rest }) => (
   <Table {...rest}>
     <TableBody>
       {rows.map(row => (
@@ -19,7 +19,11 @@ export const SimpleTable: React.SFC<SimpleTableProps> = ({ rows, ...rest }) => (
           </TableCell>
           <TableCell>
             <Box alignSelf={row.align || 'center'} fill>
-              {typeof row.render === 'function' ? row.render() : <Text>{String(row.render)}</Text>}
+              {typeof row.render === 'function' ? (
+                (row as any).render()
+              ) : (
+                <Text>{String(row.render)}</Text>
+              )}
             </Box>
           </TableCell>
         </TableRow>

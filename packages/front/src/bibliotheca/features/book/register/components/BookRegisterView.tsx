@@ -47,7 +47,7 @@ export const BookRegisterView = () => {
       <Box align="center" justify="center">
         <BarcodeLoaderModule />
         <Form>
-          <SimpleTable rows={rows} />
+          <SimpleTable rows={rows as any[]} />
           <Button type="button" primary label="登録" onClick={submit} />
           <button type="reset" ref={resetButtonRef} style={{ display: 'none' }} />
         </Form>

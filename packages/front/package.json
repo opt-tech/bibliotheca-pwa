@@ -25,7 +25,7 @@
     "react-navi": "^0.15.0",
     "react-scripts": "5.0.1",
     "rxjs": "^7.8.1",
-    "styled-components": "^6.1.13",
+    "styled-components": "^5.2.3",
     "typeless": "^1.7.0"
   },
   "scripts": {
@@ -63,11 +63,11 @@
     "@craco/craco": "^7.1.0",
     "babel-plugin-require-context-hook": "^1.0.0",
     "date-fns": "^4.1.0",
-    "firebase": "^11.0.2",
+    "firebase": "^7.19.1",
     "plop": "^4.0.1",
     "quagga": "^0.12.1",
     "react-feather": "^2.0.9",
-    "ts-jest": "^29.2.5",
+    "ts-jest": "^26.5.4",
     "typescript": "^5.7.2"
   }
 }
