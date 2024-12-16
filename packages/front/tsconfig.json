@@ -14,6 +14,7 @@
     "noEmit": true,
     "skipLibCheck": true,
     "strictFunctionTypes": false,
+    "noImplicitAny": false,
     "target": "es5",
     "types": [
       "webpack-env",

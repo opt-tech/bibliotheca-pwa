@@ -15,7 +15,7 @@ interface Props {
   disabled?: boolean;
 }
 
-export const BookBorrowAndReturnButton: React.SFC<Props> = ({
+export const BookBorrowAndReturnButton: React.FC<Props> = ({
   onBorrow,
   onReturn,
   book,

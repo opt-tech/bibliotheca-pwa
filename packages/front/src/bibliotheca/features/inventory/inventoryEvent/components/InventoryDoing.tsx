@@ -6,7 +6,7 @@ import { FormCheckmark as FormCheckmarkIcon, FormClose as FormCloseIcon } from '
 import { useActions } from 'typeless';
 import { InventoryEventActions, ViewType } from '../interface';
 import { InventorySubmitButton } from './InventorySubmitButton';
-import format from 'date-fns/format';
+import { format } from 'date-fns/format';
 
 export type BookForTable = Book & {
   status: InventoryStatus;
