@@ -72,4 +72,4 @@ firestore.rules
 
 firebase-config.json
 
-tsconfig.tsbuildinfo
+tsconfig*.tsbuildinfo

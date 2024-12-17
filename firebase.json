@@ -5,7 +5,7 @@
   },
   "functions": {
     "source": "packages/functions",
-    "runtime": "nodejs14"
+    "runtime": "nodejs16"
   },
   "hosting": {
     "target": "bibliotheca-site",
